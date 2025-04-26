@@ -1,0 +1,28 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Blood Group Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="title">🔐 Login to Your Account</h1>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST" action="/login" class="login-form">
+            <label for="username">👤 Username</label>
+            <input type="text" name="username" required>
+
+            <label for="password">🔒 Password</label>
+            <input type="password" name="password" required>
+
+            <button type="submit">🚪 Login</button>
+        </form>
+    </div>
+</body>
+</html>

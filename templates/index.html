@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🩸 Fingerprint Blood Group Predictor 🧬</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🩸 Fingerprint Blood Group Predictor 🧬</h1>
+        </header>
+
+        <section class="upload-section">
+            <label for="file-upload" class="upload-label">Choose Fingerprint Image</label>
+            <input type="file" id="file-upload" name="fingerprint" accept="image/*">
+            <p id="file-name">No file chosen</p>
+        </section>
+
+        <section class="prediction-section">
+            <button id="predict-btn" onclick="predictBloodGroup()">🔍 Predict Blood Group</button>
+            <div id="blood-drop" class="blood-drop-animation"></div>
+            <div id="prediction-result"></div>
+        </section>
+
+        <footer>
+            <button id="logout-btn" onclick="logout()">🚪 Logout</button>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container result-page">
+        <h1 class="title">🔬 Prediction Result</h1>
+
+        <div class="card">
+            <img src="/{{ img_path }}" alt="Uploaded fingerprint" class="preview-image">
+            <h2 class="result">🩸 Blood Group: <span>{{ blood_group }}</span></h2>
+            <p class="confidence">🎯 Confidence: {{ confidence | round(2) }}%</p>
+            <a href="/{{ pdf_path }}" class="btn" download>📄 Download Report</a>
+            <a href="/" class="btn secondary">🔙 Try Another</a>
+        </div>
+
+        <div class="animation">
+            <img src="{{ url_for('static', filename='effects/animated_heart.gif') }}" alt="Heart animation">
+        </div>
+    </div>
+</body>
+</html>

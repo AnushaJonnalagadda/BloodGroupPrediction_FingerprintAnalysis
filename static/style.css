@@ -1,0 +1,176 @@
+/* Body and global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7a18, #af002d, #319197);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Container for all content */
+.container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    background: linear-gradient(45deg, #ff5c8d, #3498db, #9b59b6);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Header styling */
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Upload section */
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    display: block;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #ff007f;
+    color: #fff;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#file-name {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Prediction section */
+.prediction-section {
+    margin-top: 25px;
+}
+
+#predict-btn {
+    background-color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff007f;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#predict-btn:hover {
+    background-color: #ff007f;
+    color: #fff;
+}
+
+.blood-drop-animation {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff007f;
+    display: inline-block;
+    margin-top: 15px;
+    animation: dropAnimation 2s infinite;
+}
+
+/* Blood drop animation */
+@keyframes dropAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Result section */
+#prediction-result {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+}
+
+#logout-btn {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ff007f;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#logout-btn:hover {
+    background-color: #ff007f;
+    color: #fff;
+}
+
+/* Keyframe animation for gradient background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Voice Assistant Button */
+#voice-assistant-btn {
+    background-color: #FF6F61; /* Pinkish color for the voice assistant */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#voice-assistant-btn:hover {
+    background-color: #FF4A36; /* Darker pink on hover */
+}
+
+#voice-assistant-btn:focus {
+    outline: none;
+}
+
