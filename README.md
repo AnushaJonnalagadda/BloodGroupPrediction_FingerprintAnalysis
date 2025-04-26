@@ -15,7 +15,7 @@ This web application predicts a person's blood group (A+, A-, B+, B-, O+, O-, AB
 
 | Technology | Purpose |
 |------------|---------|
-| Python, Flask | Backend & API |
+| Python, Flask | Backend  |
 | TensorFlow, Keras | Deep Learning Model |
 | HTML, CSS, JavaScript | Frontend Development |
 
