@@ -100,3 +100,4 @@ model.fit(X_train_data, y_train_data, epochs=10, validation_data=(X_val_data, y_
 # Save the model in .keras format (recommended)
 model.save('blood_group_predictor_model.keras')
 
+
